@@ -1,0 +1,26 @@
+<html>
+<link rel="stylesheet" type="text/css" href="./style.css" media="screen" />
+  <head>
+    <script src="script.js" type="text/javascript">
+    </script>
+    <div>
+    <div class="container">
+      <h1><span class="glyphicon glyphicon-info-sign"></span>Split Dumb</h1>
+    </div>
+  </div>
+  </head>
+
+<form id="myForm" onload="clear()" name="formName">
+    <div class="form-style-6" id="dynamicInput">
+      <input type="text" name="name" placeholder="Name" onchange="nonEmpty(this.value)"/>
+      <input type="text" name="money" placeholder="Amount Paid" onchange="validate(this.value)" />
+    </div>
+    <div class="form-style-6">
+      <input type="button" value="Add another person" onClick="addInput('dynamicInput');">
+      <a href="results.html">
+        <input type="button" value="Submit" onClick="calculate();" />
+      </a>
+    </div>
+
+</form>
+</html>
